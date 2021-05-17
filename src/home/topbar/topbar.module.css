@@ -1,0 +1,39 @@
+.topbar {
+  box-shadow: 0 2px 6px 0 rgba(41, 45, 55, 0.16);
+  padding: 2rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto 1fr auto auto auto;
+  grid-column-gap: 2rem;
+}
+.hamburgerMenu {
+  background: #01b493;
+  padding: 1rem;
+  padding-bottom: 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.hamburgerMenuIcon {
+  fill: white;
+}
+.searchBox {
+  border: none;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 30rem;
+}
+.searchBox:focus {
+  outline: none;
+}
+.logout {
+  color: #989c9e;
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.logoutIcon {
+  fill: #989c9e;
+}

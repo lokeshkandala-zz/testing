@@ -1,0 +1,12 @@
+.homeContainer {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto 1fr;
+  height: 100%;
+  overflow: hidden;
+}
+.content {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
+}

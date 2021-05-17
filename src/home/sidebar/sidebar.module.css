@@ -1,0 +1,127 @@
+.sidebarContainer {
+  width: 8rem;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100%;
+}
+.expandedSidebar {
+  width: 30rem;
+}
+.name {
+  background: #243746;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 2rem 0;
+}
+.iconsContainer {
+  background: #2e4050;
+}
+.arrowIcon {
+  width: 2rem;
+  height: 1rem;
+}
+.iconContainer {
+  padding: 2rem;
+  display: grid;
+  justify-content: center;
+  cursor: pointer;
+}
+.iconContainer:hover,
+.expandedNavItemContainer:hover,
+.expandedNavItemSelected,
+.selected {
+  background: #293846;
+  border-left: 4px solid #04ab8c;
+}
+
+.sidebarIcon {
+  height: 2rem;
+  width: 2rem;
+}
+.sidebarIcon *,
+.arrowIcon * {
+  fill: #a7b1c2;
+}
+.profileInfo {
+  display: grid;
+  grid-gap: 0.4rem;
+  padding: 4rem;
+  background: #233745;
+}
+.profilePicBg {
+  background: white;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  overflow: hidden;
+}
+.profilePic {
+  width: 100%;
+  height: 100%;
+  background-image: url("./dummy.png");
+  background-size: contain;
+}
+.userName {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.role {
+  color: #798fa3;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.expandedNavItemsContainer {
+  background: #293846;
+}
+.expandedNavItem {
+  display: grid;
+  align-items: center;
+  grid-auto-flow: column;
+  grid-template-columns: auto 1fr auto;
+  padding: 1.5rem 2rem 1.5rem 4rem;
+  grid-gap: 1.2rem;
+  cursor: pointer;
+  color: #a7b1c2;
+}
+.expandedNavItemSubItem {
+  color: #a7b1c2;
+  padding: 1rem 2rem 1rem 7rem;
+  cursor: pointer;
+}
+.expandedNavItem .label {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+.expandedNavItem .label,
+.expandedNavItemSubItem {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.expandedNavItem .expandIcon {
+  padding: 0.8rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+.expandedNavItem:hover span,
+.expandedNavItemSubItem:hover,
+.expandedNavItemSubItemSelected,
+.expandedNavItemSelected .label {
+  color: white;
+}
+
+.iconContainer:hover *,
+.iconContainer.selected g,
+.expandedNavItem:hover *,
+.selected *,
+.expandedNavItemSelected * {
+  fill: white;
+}
+.countBadge {
+  font-size: 1rem;
+  font-weight: bold;
+}

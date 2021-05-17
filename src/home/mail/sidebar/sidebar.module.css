@@ -1,0 +1,90 @@
+.container {
+  padding: 3rem;
+  padding-top: 1rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-auto-rows: max-content;
+  max-width: 30rem;
+}
+.composeMailButton {
+  background: #01b493;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1rem 0;
+  border-radius: 6px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+.foldersTitle,
+.categoriesTitle,
+.labelTitle {
+  color: #666a6c;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1.4rem;
+}
+.folderIcon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.folderIcon * {
+  fill: #666a6c;
+}
+.folderItem,
+.categoryItem {
+  color: #848484;
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1rem;
+  align-items: center;
+  grid-template-columns: auto 1fr auto;
+  padding: 0.8rem 0;
+  cursor: pointer;
+}
+.folderItem {
+  border-bottom: 1px solid #e9ecee;
+}
+.categoryItem .circle {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+.categoryItem .green {
+  background: #01b493;
+}
+.categoryItem .red {
+  background: #f2514d;
+}
+.categoryItem .blue {
+  background: #0c84c8;
+}
+.categoryItem .lightblue {
+  background: #09c6c9;
+}
+.categoryItem .orange {
+  background: #faac50;
+}
+.labelsContainer {
+  display: flex;
+  grid-gap: 1rem;
+  flex-wrap: wrap;
+}
+.labelContainer {
+  border: 1px solid #e9ecee;
+  background: white;
+  color: #848484;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  column-gap: 0.6rem;
+  font-weight: bold;
+}
+.labelIcon {
+  width: 0.8rem;
+  height: 0.8rem;
+}

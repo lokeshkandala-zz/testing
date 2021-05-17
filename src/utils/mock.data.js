@@ -1,0 +1,80 @@
+export const MOCK_DATA = {
+  USER_1: {
+    PASSWORD: "1234",
+    USERNAME: "test1@test.com",
+    USER_DETAILS: {
+      name: "David williams",
+      role: "Art director",
+      id: "USER_1",
+    },
+    MAILS: [
+      {
+        from: "Anna smith",
+        message: "lorem ipsum dockrt pirhn",
+        isRead: false,
+        time: "6: 10 AM",
+        id: "message1",
+      },
+      {
+        from: "Jack Nowak",
+        message: "lorem ipsum",
+        isRead: false,
+        time: "8: 22 AM",
+        id: "message2",
+      },
+      {
+        from: "Anna smith",
+        message: "lorem ipsum",
+        isRead: false,
+        time: "Jan 12",
+        id: "message3",
+        label: "Clients",
+      },
+      {
+        from: "Anna smith",
+        message: "lorem ipsum",
+        isRead: true,
+        time: "Dec 10",
+        id: "message4",
+      },
+      {
+        from: "Anna smith",
+        message: "lorem ipsum",
+        isRead: true,
+        time: "6: 10 AM",
+        id: "message5",
+        label: "Documents",
+      },
+    ],
+    SENT_MAILS: [],
+    id: "USER_1",
+  },
+  USER_2: {
+    PASSWORD: "1234",
+    USERNAME: "test2@test.com",
+    USER_DETAILS: {
+      name: "Sachin Tendulkar",
+      role: "Cricketer",
+      id: "USER_2",
+    },
+    MAILS: [
+      {
+        from: "Anna smith",
+        message: "lorem ipsum",
+        isRead: false,
+        time: "Dec 10",
+        id: "message1",
+      },
+      {
+        from: "Anna smith",
+        message: "lorem ipsum",
+        isRead: false,
+        time: "6: 10 AM",
+        id: "message2",
+        label: "Documents",
+      },
+    ],
+    SENT_MAILS: [],
+    id: "USER_2",
+  },
+};

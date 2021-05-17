@@ -1,0 +1,30 @@
+.inbox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: white;
+  border: 1px solid #e7ebed;
+}
+.messageRead {
+  font-weight: normal;
+}
+.inboxItem {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 2rem;
+  grid-template-columns: auto auto 1fr auto;
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding: 2rem;
+  border-bottom: 1px solid #eeeff1;
+  cursor: pointer;
+  align-items: center;
+}
+.inboxItem:hover,
+.inboxItem.rowSelected {
+  background: #f9f8f8;
+}
+.isMessageRead * {
+  font-weight: normal;
+  color: #989c9e;
+}

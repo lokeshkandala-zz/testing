@@ -1,0 +1,55 @@
+.toolbar {
+  display: grid;
+  padding: 2rem;
+  grid-gap: 2rem;
+  border-bottom: 1px solid #f0f1f2;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header span {
+  font-size: 2.4rem;
+  color: #727678;
+}
+.searchBar {
+  border: 1px solid #eaebec;
+  border-radius: 4px;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: bold;
+  align-items: center;
+  overflow: hidden;
+  padding-left: 1rem;
+}
+.searchBar input {
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #dcdcdc;
+}
+.searchBar div {
+  background: #01b493;
+  padding: 1rem;
+  color: white;
+}
+.actionButton {
+  border: 1px solid #e7ebed;
+  padding: 1rem;
+  border-radius: 4px;
+  color: #939697;
+  background: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-right: 0.8rem;
+  cursor: pointer;
+}
+.actionIcon {
+  width: 1rem;
+  height: 1rem;
+}
+.actionIcon * {
+  fill: #939697;
+}

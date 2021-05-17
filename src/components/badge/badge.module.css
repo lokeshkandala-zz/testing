@@ -1,0 +1,15 @@
+.container {
+  padding: 0.2rem 1rem;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+}
+.yellow {
+  background: #faac50;
+}
+.red {
+  background: #f05262;
+}
+.green {
+  background: #72ccb6;
+}

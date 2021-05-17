@@ -1,0 +1,17 @@
+.container {
+  display: grid;
+  position: relative;
+  align-content: center;
+  padding-right: 1rem;
+}
+.badge {
+  position: absolute;
+  left: 0.8rem;
+}
+.icon {
+  width: 2rem;
+  height: 2rem;
+}
+.icon g {
+  fill: #989c9e;
+}

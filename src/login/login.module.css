@@ -1,0 +1,44 @@
+.loginContainer {
+  background-color: var(--bg-1);
+  display: grid;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+}
+.formContainer {
+  display: grid;
+  width: 40rem;
+  grid-auto-rows: min-content;
+  grid-gap: 2rem;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  background: white;
+  height: min-content;
+  padding: 2rem;
+  border-radius: 8px;
+}
+.formTitle {
+  text-align: center;
+}
+.inputField {
+  display: grid;
+  row-gap: 0.8rem;
+}
+.inputField label {
+  font-size: var(--font-size-12);
+}
+.inputField input {
+  height: 3rem;
+  background: #f3f3f4;
+  border: none;
+}
+.loginButton {
+  height: 3rem;
+  border: none;
+  background: #01b493;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.validationError {
+  color: red;
+}
