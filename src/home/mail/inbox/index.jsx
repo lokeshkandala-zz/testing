@@ -14,7 +14,7 @@ export function Inbox() {
   const history = useHistory();
   const { url } = useRouteMatch();
   const onRowclick = (mailId) => {
-    history.push(`${url}/${mailId}`);
+    // history.push(`${url}/${mailId}`);
   };
   useEffect(() => {
     setSelectedIds([]);
@@ -33,9 +33,17 @@ export function Inbox() {
     }
   };
   const onDelete = () => {
-    useUserStoreAPI
-      .getState()
-      .setMails(mails.filter((mail) => !selectedIds.includes(mail.id)));
+    if (mailNavItem === "inbox") {
+      useUserStoreAPI
+        .getState()
+        .setMails(mails.filter((mail) => !selectedIds.includes(mail.id)));
+    } else {
+      useUserStoreAPI
+        .getState()
+        .setSentMails(
+          sentMails.filter((mail) => !selectedIds.includes(mail.id))
+        );
+    }
   };
   return (
     <div className={styles.inbox}>

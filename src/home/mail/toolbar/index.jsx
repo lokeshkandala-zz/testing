@@ -1,13 +1,19 @@
 import { useUserStore } from "../../../stores/user.store";
+import { useHomeStore } from "../../home.store";
 import { ReactComponent as TrashIcon } from "./trash.svg";
 import styles from "./toolbar.module.css";
 
 export function Toolbar({ onDelete }) {
   const unReadMailsCount = useUserStore((state) => state.unReadMailsCount);
+  const mailNavItem = useHomeStore((state) => state.mailNavItem);
   return (
     <div className={styles.toolbar}>
       <div className={styles.header}>
-        <span>{`Inbox(${unReadMailsCount})`}</span>
+        {mailNavItem === "inbox" ? (
+          <span>{`Inbox(${unReadMailsCount})`}</span>
+        ) : (
+          <span>Send mail</span>
+        )}
         <div className={styles.searchBar}>
           <input placeholder="Search mail" />
           <div>Search</div>

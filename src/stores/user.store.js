@@ -49,9 +49,10 @@ export const [useUserStore, useUserStoreAPI] = createWithImmer(
         return { isLoggedIn: data };
       });
     },
-    setMails(data, userId = userDetails.id) {
+    setMails(data, userId) {
       setState((state) => {
         const { userDetails, mails } = getState();
+        userId = userId || userDetails.id;
         let mockData = getItemFromLocalStorage("mock_data");
         mockData[userId].MAILS = data;
         setItemInLocalStorage("mock_data", mockData);
