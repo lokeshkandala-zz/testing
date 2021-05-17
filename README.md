@@ -18,7 +18,7 @@ USERNAME: "test1@test.com"
 }
 USER_2 {
 PASSWORD: "1234",
-USERNAME: "test1@test.com"
+USERNAME: "test2@test.com"
 }
 
 The page will reload if you make edits.\
